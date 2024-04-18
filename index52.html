@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Самостоятельное задание 9</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+            let array = ['a', 'b', 'c', 'b', 'a'];
+            array.sort();
+			let sortArray = [array[0]];			
+            for (let i = 1; i < array.length; i++) {
+				if(array[i] != sortArray[sortArray.length - 1]){  
+                    sortArray.push(array[i]);  
+                }              
+            }
+            document.write('Исходный массив: ' + array);
+            document.write('<br> Результат работы функции: ' + sortArray);
+		</script>
+	</body>
+</html>

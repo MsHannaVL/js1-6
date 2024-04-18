@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Самостоятельное задание 18</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+            let n = prompt("Введите номер числа Фибоначчи:", ).trim();
+                if (isNaN(n) || n === ''|| n > 100|| n == 0) {
+            alert("Введите число меньше 100!");
+            document.getElementsByName("alert").reload(window.location.reload());
+                }
+                else{
+                    function fibonacci(n) {
+                let a = 0;
+                let b = 1;
+                for (let i = 3; i <= n; i++) {
+                    let c = a + b;
+                    a = b;
+                    b = c;
+                }
+                return b;
+                }
+window.alert(`Число Фибоначчи: ${"[" + fibonacci(n) + "]"}.`)
+}
+		</script>
+	</body>
+</html>
+

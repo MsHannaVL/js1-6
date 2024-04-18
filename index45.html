@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Самостоятельное задание 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const reverse = (array) => {
+           const reversed = [];
+           for (let i = array.length - 1; i >=0; i -=1) {
+            reversed.push(array[i]);
+        }
+        return(reversed);
+        }  ;
+        const data = [7, 8, 9]
+        document.write('Перевернутый массив: ' + reverse(data));
+        document.write('<br>Исходный массив: ' + data);
+    </script>
+</body>
+</html>

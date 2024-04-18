@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Самостоятельное задание 16</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let array = [7, 90, 120, 22, 540, 0, 213, -4, 101];
+      array.sort();
+      let newArray = [];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 99) {
+          newArray.unshift(array[i]);
+        }
+      }
+      window.alert(`Массив изначальный: ${"[" + array + "]"}.\nПреобразованный массив: ${"[" + newArray.reverse() + "]"}.`)
+    </script>
+  </body>
+</html>

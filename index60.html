@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Самостоятельное задание 17</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let array = [5, 7, 8, 5, 7]
+		window.alert(`Массив изначальный: ${"[" + array + "]"}.`)
+		function deletePrimitiv() {
+		array.sort();  
+      	let newArray = [array[0]];
+      	for (let i = 1; i < array.length; i++) {
+        	if (array[i] != newArray[newArray.length - 1]) {
+          		newArray.push(array[i]);
+        	}
+      	}
+      	return window.alert(`Измененный массив: ${"[" + newArray.sort((a, b) => (a - b)) + "]"}.`);
+	}
+	deletePrimitiv();
+
+    </script>
+  </body>
+</html>
